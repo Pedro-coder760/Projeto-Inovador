@@ -193,3 +193,11 @@ footer p {
     font-size: 0.9em;
     color: #666;
 }
+
+.quem-somos p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
