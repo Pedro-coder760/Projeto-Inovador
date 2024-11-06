@@ -21,27 +21,28 @@
         <div class="news-container">
             <div class="news-item">
                 <img src="news-image.jpeg" alt="Imagem de Cenoura">
+                <img width="">
                 <h3>Campanha de Outubro Lançada!</h3>
                 <p>Detalhes sobre a nova campanha de arrecadação que inicia em outubro...</p>
-                <button onclick="abrirModal('Campanha de Outubro Lançada!')">Leia!</button>
+                <button onclick="abrirModal('Campanha de Outubro Lançada!')">Saiba!</button>
             </div>
             <div class="news-item">
                 <img src="news-image2.jpeg" alt="Imagem de Peixe Assado">
                 <h3>Doações Batendo Recordes!</h3>
                 <p>Agradecemos a todos pelas doações recordes alcançadas este mês...</p>
-                <button onclick="abrirModal('Doações Batendo Recordes!')">Leia!</button>
+                <button onclick="abrirModal('Doações Batendo Recordes!')">Saiba!</button>
             </div>
             <div class="news-item">
                 <img src="news-image3.jpeg" alt="Imagem de Abacate">
                 <h3>Voluntários Precisam de Você!</h3>
                 <p>Estamos buscando mais voluntários para ajudar nas ações de distribuição...</p>
-                <button onclick="abrirModal('Voluntários Precisam de Você!')">Leia!</button>
+                <button onclick="abrirModal('Voluntários Precisam de Você!')">Saiba!</button>
             </div>
             <div class="news-item">
                 <img src="news-image4.jpeg" alt="Imagem de Blueberry">
                 <h3>Evento de Arrecadação em Breve!</h3>
                 <p>Fique atento ao nosso próximo evento para arrecadar mais alimentos...</p>
-                <button onclick="abrirModal('Evento de Arrecadação em Breve!')">Leia!</button>
+                <button onclick="abrirModal('Evento de Arrecadação em Breve!')">Saiba!</button>
             </div>
         </div>
     </section>
@@ -95,9 +96,58 @@
         </div>
         <div class="question" onclick="toggleResposta(this)">
             <h3>Posso ajudar de outras formas?</h3>
-            <p class="resposta">Claro, Voluntariado e divulgação são sempre bem-vindos!</p>
+            <p class="resposta">Claro! Voluntariado e divulgação são sempre bem-vindos!</p>
         </div>
     </section>
+
+    <!-- Conecte-se conosco agora! -->
+    <header>
+        <h2>Conecte-se conosco agora!</h2>
+        <div class="redes-sociais">
+            <a href="#">🔗</a>
+            <a href="#">🔗</a>
+            <a href="#">🔗</a>
+            <a href="#">🔗</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="fale-conosco">
+            <h3>Fale Conosco</h3>
+            <form id="formContato" onsubmit="enviarMensagem(event)">
+                <input type="text" id="nome" placeholder="Nome" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <textarea id="mensagem" placeholder="Mensagem" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+
+        <section class="nossos-contatos">
+            <h3>Nossos Contatos</h3>
+            <div class="contato-info">
+                <div>📞 Telefone</div>
+                <div>✉️ Email</div>
+                <div>📍 Endereço</div>
+                <div>⏰ Horário de Funcionamento</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="#">Sobre</a>
+            <a href="#">Ajuda</a>
+            <a href="#">Blog</a>
+            <a href="#">Contato</a>
+        </nav>
+        <div class="redes-sociais">
+            <a href="#">🔗</a>
+            <a href="#">🔗</a>
+            <a href="#">🔗</a>
+            <a href="#">🔗</a>
+        </div>
+        <p>© 2024 Fornecedor de Alimentos. Todos os direitos reservados.</p>
+    </footer>
 
     <!-- Modal para exibir notícias -->
     <div class="modal" id="modal">

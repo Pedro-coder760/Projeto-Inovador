@@ -110,3 +110,86 @@ h1, h2 {
     font-size: 24px;
     cursor: pointer;
 }
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ccc;
+    width: 100%;
+}
+
+.redes-sociais a {
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+main {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.fale-conosco, .nossos-contatos {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.contato-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contato-info div {
+    flex: 1 1 calc(50% - 10px);
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    text-align: center;
+}
+
+footer nav a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+}

@@ -19,3 +19,15 @@ function toggleResposta(element) {
     const resposta = element.querySelector(".resposta");
     resposta.style.display = resposta.style.display === "block" ? "none" : "block";
 }
+
+function enviarMensagem(event) {
+    event.preventDefault();
+    
+    const nome = document.getElementById("nome").value;
+    const email = document.getElementById("email").value;
+    const mensagem = document.getElementById("mensagem").value;
+    
+    alert(`Obrigado, ${nome}! Sua mensagem foi enviada com sucesso.`);
+    
+    document.getElementById("formContato").reset();
+}
