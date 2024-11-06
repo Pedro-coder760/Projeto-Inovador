@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campanha de Doação de Alimentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Seção de Introdução -->
+    <section class="intro">
+        <h1>Transforme sua generosidade em esperança para quem precisa!</h1>
+        <p><strong>Faça a diferença hoje!</strong> Contribua para a nossa missão de alimentar vidas!</p>
+        <button onclick="doar()">Doe agora!</button>
+    </section>
+
+    <!-- Seção de Últimas Novidades -->
+    <section class="news">
+        <h2>Últimas Novidades</h2>
+        <div class="news-container">
+            <div class="news-item">
+                <img src="news-image.jpeg" alt="Imagem de Cenoura">
+                <h3>Campanha de Outubro Lançada!</h3>
+                <p>Detalhes sobre a nova campanha de arrecadação que inicia em outubro...</p>
+                <button onclick="abrirModal('Campanha de Outubro Lançada!')">Leia!</button>
+            </div>
+            <div class="news-item">
+                <img src="news-image2.jpeg" alt="Imagem de Peixe Assado">
+                <h3>Doações Batendo Recordes!</h3>
+                <p>Agradecemos a todos pelas doações recordes alcançadas este mês...</p>
+                <button onclick="abrirModal('Doações Batendo Recordes!')">Leia!</button>
+            </div>
+            <div class="news-item">
+                <img src="news-image3.jpeg" alt="Imagem de Abacate">
+                <h3>Voluntários Precisam de Você!</h3>
+                <p>Estamos buscando mais voluntários para ajudar nas ações de distribuição...</p>
+                <button onclick="abrirModal('Voluntários Precisam de Você!')">Leia!</button>
+            </div>
+            <div class="news-item">
+                <img src="news-image4.jpeg" alt="Imagem de Blueberry">
+                <h3>Evento de Arrecadação em Breve!</h3>
+                <p>Fique atento ao nosso próximo evento para arrecadar mais alimentos...</p>
+                <button onclick="abrirModal('Evento de Arrecadação em Breve!')">Leia!</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Histórias -->
+    <section class="stories">
+        <h2>Alimentos que Transformam Vidas</h2>
+        <div class="story-container">
+            <div class="story">
+                <div class="story-image">Imagem</div>
+                <p>"Graças à ajuda, minha família recebeu alimentos quando mais precisava." - Maria Silva</p>
+            </div>
+            <div class="story">
+                <div class="story-image">Imagem</div>
+                <p>"Os desafios parecem menores com sua ajuda!" - Carlos Pereira</p>
+            </div>
+            <div class="story">
+                <div class="story-image">Imagem</div>
+                <p>"Nosso lar tem um novo ânimo graças a vocês." - Ana Costa</p>
+            </div>
+            <div class="story">
+                <div class="story-image">Imagem</div>
+                <p>"Vocês transformaram nossas vidas com essa campanha." - Ricardo Almeida</p>
+            </div>
+        </div>
+        <div class="impact">
+            <p>10.000 pessoas ajudadas</p>
+            <p>5.000 quilos de alimentos distribuídos</p>
+            <p>1.000 sorrisos garantidos</p>
+        </div>
+    </section>
+
+    <!-- Perguntas Frequentes -->
+    <section class="faq">
+        <h2>Perguntas Frequentes</h2>
+        <div class="question" onclick="toggleResposta(this)">
+            <h3>Pergunta</h3>
+            <p class="resposta">Resposta</p>
+        </div>
+    </section>
+
+    <!-- Modal para exibir notícias -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p>Conteúdo detalhado da notícia...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
