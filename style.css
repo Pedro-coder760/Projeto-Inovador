@@ -60,7 +60,7 @@ h1, h2 {
 
 .news-image, .story-image {
     background-color: #ddd;
-    width: 80%;
+    width: 100%;
     height: 150px;
     margin-bottom: 10px;
     color: #888;
