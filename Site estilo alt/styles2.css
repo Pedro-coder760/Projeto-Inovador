@@ -1,296 +1,56 @@
-/* Estilo geral */
-body {
+/* Reset básico */
+body, h1, h2, h3, p, ul, li, a, button, input, textarea {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos globais */
+body {
   font-family: Arial, sans-serif;
-  background-image: url('https://via.placeholder.com/1920x1080'); /* Substitua pelo caminho da imagem de fundo */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  line-height: 1.6;
   color: #333;
+  background-color: #f9f9f9;
+  padding: 0;
+  margin: 0;
 }
 
-/* Seção de chamada para ação */
-.call-to-action {
-  background-color: rgba(255, 255, 255, 0.95); /* Fundo branco com transparência */
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+header, footer {
+  background-color: #4caf50;
+  color: white;
   text-align: center;
-  width: 90%;
-  max-width: 600px;
+  padding: 1em 0;
 }
 
-.call-to-action h1 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.call-to-action p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  color: #555;
-}
-
-.call-to-action button {
-  background-color: #f8c542;
-  color: #fff;
-  border: none;
-  padding: 15px 25px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.call-to-action button:hover {
-  background-color: #e2a921;
-}
-
-header {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.social-icons a {
-  margin: 0 10px;
+a {
   text-decoration: none;
+  color: white;
 }
 
-main {
-  padding: 20px;
+a:hover {
+  text-decoration: underline;
 }
 
-.fale-conosco {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-form {
-  display: inline-block;
-  width: 100%;
-  max-width: 400px;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
   border-radius: 5px;
 }
 
-form button {
-  background-color: #ffda00;
-  color: #333;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
+button:hover {
+  background-color: #45a049;
 }
-
-.nossos-contatos {
-  text-align: center;
-}
-
-.contacts {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.contacts div {
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-}
-
-.footer-nav a {
-  color: #fff;
-  margin: 0 15px;
-  text-decoration: none;
-}
-
-h2 {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 24px;
-  }
-  
-  .historias {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .depoimentos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-  }
-  
-  .depoimentos div {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .stats {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    gap: 20px;
-  }
-  
-  .stats div {
-    text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .stats h3 {
-    font-size: 32px;
-    color: #ffda00;
-    margin: 0;
-  }
-  
-  .faq {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .faq-item {
-    background-color: #fff;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    text-align: left;
-    max-width: 800px;
-    margin: 10px auto;
-  }
-  
-  .faq-item h3 {
-    margin: 0;
-  }
-  
-  .faq-item p {
-    display: none;
-    margin-top: 10px;
-  }
-
-  .container {
-    width: 90%;
-    margin: 20px auto;
-}
-
-.novidades h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    width: 300px;
-    padding: 15px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.card img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.card h3 {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-.card p {
-    font-size: 0.9em;
-    color: #555;
-}
-
-.card button {
-    background-color: #f8c542;
-    border: none;
-    padding: 10px 15px;
-    font-size: 1em;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.card button:hover {
-    background-color: #e2a921;
-}
-
-.quem-somos {
-    margin-top: 30px;
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.quem-somos img {
-    width: 150px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.quem-somos h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.quem-somos p {
-    font-size: 1em;
-    color: #555;
-  }
 
 /* Cabeçalho */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
+  padding: 1em 2em;
+  background-color: #4caf50;
 }
 
 .logo {
@@ -299,72 +59,142 @@ h2 {
 }
 
 .logo img {
-  border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 0.5em;
 }
 
 .menu a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.menu a:hover {
-  color: #f8c542;
+  margin: 0 1em;
 }
 
 .join-button {
-  background-color: #f8c542;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 20px;
-  text-decoration: none;
+  background-color: #fff;
+  color: #4caf50;
   font-weight: bold;
-  transition: background-color 0.3s;
+  border: 2px solid #fff;
+  padding: 0.5em 1em;
+  border-radius: 20px;
 }
 
 .join-button:hover {
-  background-color: #e2a921;
-}
-
-/* Seção principal */
-.hero {
-  background-image: url('https://via.placeholder.com/1920x1080'); /* Substituir pela imagem real */
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  padding: 20px;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.hero-content p {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-
-.cta-button {
   background-color: transparent;
-  color: #fff;
-  border: 2px solid #fff;
-  padding: 10px 30px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: background-color 0.3s, color 0.3s;
+  color: white;
+  border-color: white;
 }
 
-.cta-button:hover {
-  background-color: #fff;
-  color: #333;
-}  
+/* Hero Section */
+.hero {
+  text-align: center;
+  background-color: #e8f5e9;
+  padding: 2em 1em;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero .cta-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.7em 2em;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+/* Call-to-Action Section */
+.call-to-action {
+  text-align: center;
+  padding: 2em 1em;
+  background-color: #f1f8e9;
+}
+
+.call-to-action h2 {
+  margin-bottom: 1em;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+  padding: 2em;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+/* Histórias */
+.historias .depoimentos blockquote {
+  font-style: italic;
+  border-left: 4px solid #4caf50;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+}
+
+/* FAQ */
+.faq details {
+  margin-bottom: 1em;
+  padding: 1em;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Formulário */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 500px;
+  margin: 2em auto;
+}
+
+input, textarea {
+  padding: 0.5em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1em 0;
+}
+
+.footer-nav a {
+  margin: 0 0.5em;
+}
+
+/* Animação para o texto com movimento horizontal */
+.call-to-action h2 {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #4CAF50;
+  font-weight: bold;
+  font-size: 1.5rem;
+  animation: moveText 10s linear infinite;
+}
+
+/* Definição do movimento */
+@keyframes moveText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

@@ -1,43 +1,31 @@
-// scripts.js
-
-document.getElementById("contact-form").addEventListener("submit", function (event) {
-  event.preventDefault();
-
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
-
-  if (name && email && message) {
-    alert("Mensagem enviada com sucesso!");
-    document.getElementById("contact-form").reset();
-  } else {
-    alert("Por favor, preencha todos os campos.");
-  }
-});
-
-function toggleFAQ(element) {
-    const answer = element.querySelector("p");
-    const isVisible = answer.style.display === "block";
-  
-    // Esconde todas as respostas
-    document.querySelectorAll(".faq-item p").forEach((p) => (p.style.display = "none"));
-  
-    // Mostra ou esconde a resposta clicada
-    answer.style.display = isVisible ? "none" : "block";
-  }
-
-// Script para funcionalidades futuras
-document.querySelectorAll('.card button').forEach(button => {
-  button.addEventListener('click', () => {
-      alert("Mais informações em breve!");
+// Abrir e fechar FAQ
+function toggleFAQ(faqItem) {
+  const isOpen = faqItem.open;
+  const allFAQs = document.querySelectorAll('.faq-item');
+  allFAQs.forEach(item => {
+    if (item !== faqItem) {
+      item.open = false;
+    }
   });
+  faqItem.open = !isOpen;
+}
+
+// Capturar envio do formulário
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  // Simula envio de dados
+  alert(`Obrigado, ${name}! Sua mensagem foi enviada com sucesso.`);
+  
+  // Limpa o formulário
+  this.reset();
 });
 
-document.getElementById("donate-button").addEventListener("click", () => {
-  alert("Obrigado por sua generosidade! Sua doação faz a diferença.");
-});
-
-// Adicionando interatividade ao botão "Comece Agora!"
-document.querySelector('.cta-button').addEventListener('click', () => {
-  alert("Obrigado por apoiar nossa causa! Vamos fazer a diferença juntos!");
+// Botão "Doe Agora!"
+document.getElementById('donate-button').addEventListener('click', function () {
+  alert('Obrigado por se interessar em doar! Entre na seção de doações para continuar.');
 });
