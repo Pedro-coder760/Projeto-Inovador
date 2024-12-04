@@ -15,8 +15,15 @@ body {
   margin: 0;
 }
 
-header, footer {
-  background-color: #4caf50;
+header {
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 1em 0;
+}
+
+footer {
+  background-color: #001eff;
   color: white;
   text-align: center;
   padding: 1em 0;
@@ -24,7 +31,7 @@ header, footer {
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 a:hover {
@@ -32,7 +39,7 @@ a:hover {
 }
 
 button {
-  background-color: #4caf50;
+  background-color: #fff200;
   color: white;
   border: none;
   padding: 0.5em 1em;
@@ -50,7 +57,7 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   padding: 1em 2em;
-  background-color: #4caf50;
+  background-color: #ffffff;
 }
 
 .logo {
@@ -67,8 +74,8 @@ button:hover {
 }
 
 .join-button {
-  background-color: #fff;
-  color: #4caf50;
+  background-color: #fff200;
+  color: #000000;
   font-weight: bold;
   border: 2px solid #fff;
   padding: 0.5em 1em;
@@ -76,8 +83,8 @@ button:hover {
 }
 
 .join-button:hover {
-  background-color: transparent;
-  color: white;
+  background-color: yellow;
+  color: black;
   border-color: white;
 }
 
