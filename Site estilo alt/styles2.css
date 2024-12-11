@@ -92,18 +92,18 @@ button:hover {
 .hero {
   text-align: center;
   background-color: #e8f5e9;
-  padding: 2em 1em;
+  padding: 1em 1em;
 }
 
 .hero h1 {
-  font-size: 2.5em;
+  font-size: 2em;
   margin-bottom: 0.5em;
 }
 
 .hero .cta-button {
   background-color: #4caf50;
   color: white;
-  padding: 0.7em 2em;
+  padding: 0.5em 1em;
   border-radius: 5px;
   font-size: 1em;
 }
@@ -111,12 +111,12 @@ button:hover {
 /* Call-to-Action Section */
 .call-to-action {
   text-align: center;
-  padding: 2em 1em;
+  padding: 1.5em 1em;
   background-color: #f1f8e9;
 }
 
 .call-to-action h2 {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 /* Cards */
@@ -190,7 +190,7 @@ footer {
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
-  color: #4CAF50;
+  color: black;
   font-weight: bold;
   font-size: 2.0rem;
   animation: moveText 10s linear infinite;
