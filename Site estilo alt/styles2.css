@@ -205,3 +205,20 @@ footer {
     transform: translateX(-100%);
   }
 }
+
+.hero {
+  background-image: url('Bolo Kit Kat Brigadeiro Morango.webp');
+  background-size: cover; /* Faz a imagem cobrir toda a área */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição */
+  height: 100vh; /* Define uma altura de 100% da janela de visualização */
+  display: flex; /* Permite alinhar o conteúdo */
+  align-items: center; /* Alinha verticalmente */
+  justify-content: center; /* Alinha horizontalmente */
+  color: white; /* Define a cor do texto para contrastar */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto para melhor visibilidade */
+}
+
+.hero-content {
+  text-align: center; /* Centraliza o conteúdo dentro do container */
+}
